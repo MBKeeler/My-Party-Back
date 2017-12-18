@@ -1,6 +1,6 @@
 # Create a beverage
 
-TOKEN="" NAME="" DESCRIPTION=""  RECIPE="" RATING="" OCCASION="" sh scripts/beverages/create-beverage.sh
+TOKEN="BAhJIiU5N2FhMGU3YjViZDQxMTJhYmE1Nzg4MzMwNWNlNzUyMAY6BkVG--c806dc67fb503edb3fbfdf6fec6e7863fa5da669" NAME="Egg Nog" DESCRIPTION="Classic Holiday Beverage"  RECIPE="Egg, Nog, whiskey, & rum" RATING=2 OCCASION="Christmas" sh scripts/beverages/create-beverage.sh
 
 #Update a beverage
 

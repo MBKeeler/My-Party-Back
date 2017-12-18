@@ -1,4 +1,6 @@
-class PlayersController < ProtectedController
+# frozen_string_literal: true
+
+class BeveragesController < ProtectedController
 #class BeveragesController < ApplicationController
 
   before_action :set_beverage, only: [:show, :update, :destroy]
@@ -58,7 +60,8 @@ class PlayersController < ProtectedController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_beverage
-      @beverage = Beverage.find(params[:id])
+      # @beverage = Beverage.find(params[:id])
+      @beverage = current_user.beverages.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.

@@ -7,5 +7,6 @@
 #
 # Examples:
 #
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
+  # cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+beverages = Beverage.create([{name: 'Egg Nog'}, {description: 'The classic holiday drink'}, {recipe: 'Eggs, nog, whiskey, and rum'}, {rating:1 }, {occasion: 'Christmas'}])
