@@ -1,0 +1,19 @@
+# Create a beverage
+
+TOKEN="" NAME="" DESCRIPTION=""  RECIPE="" RATING="" OCCASION="" sh scripts/beverages/create-beverage.sh
+
+#Update a beverage
+
+TOKEN="" NAME="" DESCRIPTION=""  RECIPE="" RATING="" OCCASION="" sh scripts/beverages/update-beverage.sh
+
+# Destroy a beverage
+TOKEN="" ID=2 sh scripts/beverages/destroy-beverage.sh
+
+# Show one beverage
+TOKEN="" ID=2 sh scripts/beverages/show-beverage.sh
+
+# Show all beverages
+TOKEN="" sh scripts/beverages/index-beverages.sh
+
+# Show all beverages by occasion
+TOKEN="" OCCASION="" sh scripts/beverages/index-byOccasion-beverages.sh

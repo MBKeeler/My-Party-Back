@@ -1,0 +1,8 @@
+# Sign-up as party-goer
+EMAIL="keeler123" PASSWORD="day" PASSWORD="day" sh scripts/auth/sign-up.sh
+
+# Sign-in
+EMAIL="keeler456" PASSWORD="day" PASSWORD="day" sh scripts/auth/sign-in.sh
+
+# Change-PW
+TOKEN="" ID="" OLDPW="day" NEWPW="night" sh scripts/auth/change-password.sh
