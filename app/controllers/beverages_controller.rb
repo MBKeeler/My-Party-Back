@@ -10,7 +10,7 @@ class BeveragesController < ApplicationController
 
   # GET /beverages_by occasion
   def indexbyoccasion
-    @beverages = Beverage.find(params[:occasion])
+    @beverages = Beverage.find_each(params[:occasion])
 
     render json: @beverages
   end
