@@ -7,5 +7,7 @@ Rails.application.routes.draw do
   post '/sign-in' => 'users#signin'
   delete '/sign-out/:id' => 'users#signout'
   patch '/change-password/:id' => 'users#changepw'
+  get 'beverages/index_by_occasion'
+  get 'beverages/index_user_beverages'
   resources :users, only: %i[index show]
 end
