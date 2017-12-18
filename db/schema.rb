@@ -23,8 +23,8 @@ ActiveRecord::Schema.define(version: 20171218181743) do
     t.string "occasion"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "users_id"
-    t.index ["users_id"], name: "index_beverages_on_users_id"
+    t.bigint "user_id"
+    t.index ["user_id"], name: "index_beverages_on_user_id"
   end
 
   create_table "examples", force: :cascade do |t|
@@ -45,6 +45,6 @@ ActiveRecord::Schema.define(version: 20171218181743) do
     t.index ["token"], name: "index_users_on_token", unique: true
   end
 
-  add_foreign_key "beverages", "users", column: "users_id"
+  add_foreign_key "beverages", "users"
   add_foreign_key "examples", "users"
 end

@@ -1,19 +1,19 @@
 # Create a beverage
 
-TOKEN="BAhJIiU5N2FhMGU3YjViZDQxMTJhYmE1Nzg4MzMwNWNlNzUyMAY6BkVG--c806dc67fb503edb3fbfdf6fec6e7863fa5da669" NAME="Egg Nog" DESCRIPTION="Classic Holiday Beverage"  RECIPE="Egg, Nog, whiskey, & rum" RATING=2 OCCASION="Christmas" sh scripts/beverages/create-beverage.sh
+TOKEN="BAhJIiU5NjcyZjliMWFmMWJjMmMzMGJmNTA4ZmFmM2MzZTEwNAY6BkVG--5d534553f25381bf56e15e1bb4a6cee0043c319a" NAME="Manhatten" DESCRIPTION="Classic Cocktail"  RECIPE="Bourbon & Bitters" RATING=1 OCCASION="Anytime" sh scripts/beverages/create-beverage.sh
 
 #Update a beverage
 
-TOKEN="" NAME="" DESCRIPTION=""  RECIPE="" RATING="" OCCASION="" sh scripts/beverages/update-beverage.sh
+TOKEN="BAhJIiU5NjcyZjliMWFmMWJjMmMzMGJmNTA4ZmFmM2MzZTEwNAY6BkVG--5d534553f25381bf56e15e1bb4a6cee0043c319a" NAME="Holiday Egg Nog" ID=2 DESCRIPTION="Non-alcoholic version of this classic" RECIPE="Egg and Nog" RATING=3 OCCASION="Christmas" sh scripts/beverages/update-beverage.sh
 
 # Destroy a beverage
 TOKEN="" ID=2 sh scripts/beverages/destroy-beverage.sh
 
 # Show one beverage
-TOKEN="" ID=2 sh scripts/beverages/show-beverage.sh
+TOKEN="BAhJIiU5NjcyZjliMWFmMWJjMmMzMGJmNTA4ZmFmM2MzZTEwNAY6BkVG--5d534553f25381bf56e15e1bb4a6cee0043c319a" ID=2 sh scripts/beverages/show-beverage.sh
 
 # Show all beverages
-TOKEN="" sh scripts/beverages/index-beverages.sh
+TOKEN="BAhJIiU5NjcyZjliMWFmMWJjMmMzMGJmNTA4ZmFmM2MzZTEwNAY6BkVG--5d534553f25381bf56e15e1bb4a6cee0043c319a" sh scripts/beverages/show-beverage.sh
 
 # Show all beverages by occasion
-TOKEN="" OCCASION="" sh scripts/beverages/index-byOccasion-beverages.sh
+TOKEN="BAhJIiU5NjcyZjliMWFmMWJjMmMzMGJmNTA4ZmFmM2MzZTEwNAY6BkVG--5d534553f25381bf56e15e1bb4a6cee0043c319a" OCCASION="Christmas" sh scripts/beverages/index-byOccasion-beverages.sh
