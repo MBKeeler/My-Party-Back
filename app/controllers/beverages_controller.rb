@@ -1,9 +1,18 @@
-class BeveragesController < ApplicationController
+class PlayersController < ProtectedController
+#class BeveragesController < ApplicationController
+
   before_action :set_beverage, only: [:show, :update, :destroy]
 
   # GET /beverages
   def index
     @beverages = Beverage.all
+
+    render json: @beverages
+  end
+
+  # GET / only user's beverages
+  def indexuserbeverages
+    @beverages = current_user.beverages
 
     render json: @beverages
   end
@@ -22,7 +31,8 @@ class BeveragesController < ApplicationController
 
   # POST /beverages
   def create
-    @beverage = Beverage.new(beverage_params)
+    # @beverage = Beverage.new(beverage_params)
+    @beverage = current_user.beverages.build(beverage_params)
 
     if @beverage.save
       render json: @beverage, status: :created, location: @beverage
