@@ -8,6 +8,13 @@ class BeveragesController < ApplicationController
     render json: @beverages
   end
 
+  # GET /beverages_by occasion
+  def indexbyoccasion
+    @beverages = Beverage.find(params[:occasion])
+
+    render json: @beverages
+  end
+
   # GET /beverages/1
   def show
     render json: @beverage
@@ -46,6 +53,6 @@ class BeveragesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def beverage_params
-      params.require(:beverage).permit(:name, :description, :recipe, :rating, :occassion)
+      params.require(:beverage).permit(:name, :description, :recipe, :rating, :occasion)
     end
 end
