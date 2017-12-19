@@ -3,7 +3,7 @@
 class BeveragesController < ProtectedController
 #class BeveragesController < ApplicationController
 
-  before_action :set_beverage, only: [:show, :update, :destroy, :index_user_beverages, :index_by_occasion]
+  before_action :set_beverage, only: [:show, :update, :destroy, :index_user_beverages]
 
   # GET /beverages
   def index
@@ -21,7 +21,7 @@ class BeveragesController < ProtectedController
 
   # GET /beverages_by occasion
   def index_by_occasion
-    @beverages = Beverage.find_each(params[:occasion])
+    @beverages = Beverage.find(params[:occasion])
 
     render json: @beverages
   end
