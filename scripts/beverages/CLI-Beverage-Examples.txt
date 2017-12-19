@@ -12,13 +12,13 @@ TOKEN="BAhJIiU5NjcyZjliMWFmMWJjMmMzMGJmNTA4ZmFmM2MzZTEwNAY6BkVG--5d534553f25381b
 TOKEN="BAhJIiU5NjcyZjliMWFmMWJjMmMzMGJmNTA4ZmFmM2MzZTEwNAY6BkVG--5d534553f25381bf56e15e1bb4a6cee0043c319a" ID=4 sh scripts/beverages/destroy-beverage.sh
 
 # Show one beverage
-TOKEN="BAhJIiU5NjcyZjliMWFmMWJjMmMzMGJmNTA4ZmFmM2MzZTEwNAY6BkVG--5d534553f25381bf56e15e1bb4a6cee0043c319a" ID=2 sh scripts/beverages/show-beverage.sh
+TOKEN="BAhJIiUyNDQ2ZWRjODc1NzE4Zjg2ZDdmOGE5MzlhOTU3ZWIzMQY6BkVG--55f126b7dd447d9b83192b2582af8376d0a75b2e" ID=2 sh scripts/beverages/show-beverage.sh
 
 # Show all beverages
-TOKEN="BAhJIiU5NjcyZjliMWFmMWJjMmMzMGJmNTA4ZmFmM2MzZTEwNAY6BkVG--5d534553f25381bf56e15e1bb4a6cee0043c319a" sh scripts/beverages/show-beverage.sh
+TOKEN="BAhJIiUyNDQ2ZWRjODc1NzE4Zjg2ZDdmOGE5MzlhOTU3ZWIzMQY6BkVG--55f126b7dd447d9b83192b2582af8376d0a75b2e" sh scripts/beverages/show-beverage.sh
 
 # Show all beverages by occasion
-TOKEN="BAhJIiU5NjcyZjliMWFmMWJjMmMzMGJmNTA4ZmFmM2MzZTEwNAY6BkVG--5d534553f25381bf56e15e1bb4a6cee0043c319a" OCCASION="Christmas" sh scripts/beverages/index-byOccasion-beverages.sh
+TOKEN="BAhJIiUyNDQ2ZWRjODc1NzE4Zjg2ZDdmOGE5MzlhOTU3ZWIzMQY6BkVG--55f126b7dd447d9b83192b2582af8376d0a75b2e" OCCASION="Christmas" sh scripts/beverages/index-byOccasion-beverages.sh
 
 # Show all beverages for current user
-TOKEN="BAhJIiU3MzYxM2JlNzY2ODQ4MDYxNDRlMThiZWM3MDg0MzU2ZAY6BkVG--0b7a86dd992bb62e0151fa28f55fdc18748de13c" ID=1 sh scripts/beverages/Index-user-beverages.sh
+TOKEN="BAhJIiUyNDQ2ZWRjODc1NzE4Zjg2ZDdmOGE5MzlhOTU3ZWIzMQY6BkVG--55f126b7dd447d9b83192b2582af8376d0a75b2e" ID=1 sh scripts/beverages/Index-user-beverages.sh

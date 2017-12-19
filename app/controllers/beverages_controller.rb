@@ -12,10 +12,15 @@ class BeveragesController < ProtectedController
     render json: @beverages
   end
 
+  # GET /beverages/1
+  def show
+    @beverage = current_user.beverages.find(params[:id])
+    render json: @beverage
+  end
+
   # GET / only user's beverages
   def index_user_beverages
-    @beverages = current_user.beverages
-
+    @beverages = current_user.find(params[:id]).beverages.find(:all)
     render json: @beverages
   end
 
@@ -24,11 +29,6 @@ class BeveragesController < ProtectedController
     @beverages = Beverage.find(params[:occasion])
 
     render json: @beverages
-  end
-
-  # GET /beverages/1
-  def show
-    render json: @beverage
   end
 
   # POST /beverages
@@ -60,8 +60,11 @@ class BeveragesController < ProtectedController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_beverage
-      # @beverage = Beverage.find(params[:id])
-      @beverage = current_user.beverages.find(params[:id])
+      # @beverage = Beverage.find()
+      # @beverages = Beverage.find(:all)
+      # @beverage = Beverages.find(params[:id])
+      # @beverage = current_user.beverages.find(params[:id])
+      
     end
 
     # Only allow a trusted parameter "white list" through.
