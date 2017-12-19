@@ -63,8 +63,9 @@ class BeveragesController < ProtectedController
       # @beverage = Beverage.find()
       # @beverages = Beverage.find(:all)
       # @beverage = Beverages.find(params[:id])
-      # @beverage = current_user.beverages.find(params[:id])
-      
+      # may need to set below back to make update work
+      @beverage = current_user.beverages.find(params[:id])
+
     end
 
     # Only allow a trusted parameter "white list" through.
