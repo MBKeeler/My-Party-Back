@@ -8,8 +8,9 @@ Rails.application.routes.draw do
   post '/sign-in' => 'users#signin'
   delete '/sign-out/:id' => 'users#signout'
   patch '/change-password/:id' => 'users#changepw'
-  get '/users/:id/beverages' => 'beverages#show'
-  get '/users/:id/beverages' => 'beverages#index_user_beverages'
+  # get '/users/:id/beverages' => 'beverages#show'
+  # get '/users/:id/beverages' => 'beverages#index_user_beverages'
+  get '/user_beverages' => 'beverages#index_user_beverages'
   # routes for beverages_by
   get '/beverages/:occasion' => 'beverages#index_by_occasion'
 end

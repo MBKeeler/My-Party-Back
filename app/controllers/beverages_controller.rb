@@ -14,13 +14,17 @@ class BeveragesController < ProtectedController
 
   # GET /beverages/1
   def show
-    @beverage = current_user.beverages.find(params[:id])
+    # changed below on recommendation from Tingh
+    # @beverage = current_user.beverages.find(params[:id])
+    @beverage = Beverage.find(params[:id])
     render json: @beverage
   end
 
   # GET / only user's beverages
   def index_user_beverages
-    @beverages = current_user.find(params[:id]).beverages.find(:all)
+    # @beverages = User.find(params[:id]).beverages.find(:all)
+    # @beverages = current_user.find(params[:id]).beverages.find(:all)
+    @beverages = current_user.beverages.find(:all)
     render json: @beverages
   end
 
