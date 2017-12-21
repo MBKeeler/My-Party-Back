@@ -24,7 +24,9 @@ class BeveragesController < ProtectedController
   def index_user_beverages
     # @beverages = User.find(params[:id]).beverages.find(:all)
     # @beverages = current_user.find(params[:id]).beverages.find(:all)
-    @beverages = current_user.beverages.find(:all)
+    # @beverages = current_user.beverages.find(:all)
+    # @beverages = current_user.beverages
+    @beverages = current_user
     render json: @beverages
   end
 
@@ -39,7 +41,6 @@ class BeveragesController < ProtectedController
   def create
     # @beverage = Beverage.new(beverage_params)
     @beverage = current_user.beverages.build(beverage_params)
-
     if @beverage.save
       render json: @beverage, status: :created, location: @beverage
     else

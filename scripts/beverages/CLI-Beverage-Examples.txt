@@ -24,4 +24,4 @@ TOKEN="BAhJIiUyNDQ2ZWRjODc1NzE4Zjg2ZDdmOGE5MzlhOTU3ZWIzMQY6BkVG--55f126b7dd447d9
 TOKEN="BAhJIiUyNDQ2ZWRjODc1NzE4Zjg2ZDdmOGE5MzlhOTU3ZWIzMQY6BkVG--55f126b7dd447d9b83192b2582af8376d0a75b2e" OCCASION="Christmas" sh scripts/beverages/index-byOccasion-beverages.sh
 
 # Show all beverages for current user
-TOKEN="BAhJIiVjYWQxZWVjZmNlOTljZjUzMjMzNTBhYmI3MzdmOGFmMAY6BkVG--feb45e18cf1b15f50ffad89d2afaceb977801f03" ID=1 sh scripts/beverages/Index-user-beverages.sh
+TOKEN="BAhJIiVlZTlhNThkZTQ4ZTk3Y2UwZjY2MzBkZjEzZDE2YmVhMwY6BkVG--1dfb98b20987f6a4b43faf403bfcded2394b2def" ID=1 sh scripts/beverages/Index-user-beverages.sh
