@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   patch '/change-password/:id' => 'users#changepw'
   # get '/users/:id/beverages' => 'beverages#show'
   # get '/users/:id/beverages' => 'beverages#index_user_beverages'
-  get '/user_beverages' => 'beverages#index_all_beverages'
+  get '/all_beverages' => 'beverages#index_all_beverages'
   # routes for beverages_by
   get '/beverages/:occasion' => 'beverages#index_by_occasion'
 end
