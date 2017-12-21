@@ -3,30 +3,27 @@
 class BeveragesController < ProtectedController
 #class BeveragesController < ApplicationController
 
-  before_action :set_beverage, only: [:show, :update, :destroy, :index_user_beverages]
+  before_action :set_beverage, only: [:show, :update, :destroy]
 
   # GET /beverages
   def index
-    @beverages = Beverage.all
-
+    # @beverages = Beverage.all
+    @beverages = current_user.beverages.all
     render json: @beverages
   end
 
   # GET /beverages/1
   def show
-    # changed below on recommendation from Tingh
-    # @beverage = current_user.beverages.find(params[:id])
+    # changed below on recommendation from Thingh
     @beverage = Beverage.find(params[:id])
+    # @beverage = current_user.beverages.find(params[:id])
+
     render json: @beverage
   end
 
   # GET / only user's beverages
-  def index_user_beverages
-    # @beverages = User.find(params[:id]).beverages.find(:all)
-    # @beverages = current_user.find(params[:id]).beverages.find(:all)
-    # @beverages = current_user.beverages.find(:all)
-    # @beverages = current_user.beverages
-    @beverages = current_user
+  def index_all_beverages
+    @beverages = Beverage.all
     render json: @beverages
   end
 
@@ -68,6 +65,7 @@ class BeveragesController < ProtectedController
       # @beverage = Beverage.find()
       # @beverages = Beverage.find(:all)
       # @beverage = Beverages.find(params[:id])
+
       # may need to set below back to make update work
       @beverage = current_user.beverages.find(params[:id])
 
