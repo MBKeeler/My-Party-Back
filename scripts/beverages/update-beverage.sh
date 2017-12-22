@@ -6,6 +6,7 @@ curl --include --request PATCH "http://localhost:4741/beverages/${ID}" \
      "name": "'"${NAME}"'",
      "description": "'"${DESCRIPTION}"'",
      "recipe": "'"${RECIPE}"'",
+     "instructions": "'"${INSTRUCTIONS}"'",
      "rating": "'"${RATING}"'",
      "occasion": "'"${OCCASION}"'"
    }

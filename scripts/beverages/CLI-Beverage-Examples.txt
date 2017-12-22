@@ -1,27 +1,19 @@
 # Create a beverage
 
-TOKEN="BAhJIiU5NjcyZjliMWFmMWJjMmMzMGJmNTA4ZmFmM2MzZTEwNAY6BkVG--5d534553f25381bf56e15e1bb4a6cee0043c319a" NAME="Manhatten" DESCRIPTION="Classic Cocktail"  RECIPE="Bourbon & Bitters" RATING=1 OCCASION="Anytime" sh scripts/beverages/create-beverage.sh
-
-TOKEN="BAhJIiVjYWQxZWVjZmNlOTljZjUzMjMzNTBhYmI3MzdmOGFmMAY6BkVG--feb45e18cf1b15f50ffad89d2afaceb977801f03" NAME="Gin Martini" DESCRIPTION="Classic Cocktail"  RECIPE="Gin, vermouth, olive" RATING=1 OCCASION="Anytime" sh scripts/beverages/create-beverage.sh
+TOKEN="" NAME="Holiday Egg Nog" ID=2 DESCRIPTION="Non-alcoholic version of this classic" RECIPE="Egg and Nog" INSTRUCTIONS="do this and that" RATING=3 OCCASION="Christmas" sh scripts/beverages/create-beverage.sh
 
 #Update a beverage
 
-TOKEN="BAhJIiU5NjcyZjliMWFmMWJjMmMzMGJmNTA4ZmFmM2MzZTEwNAY6BkVG--5d534553f25381bf56e15e1bb4a6cee0043c319a" NAME="Holiday Egg Nog" ID=2 DESCRIPTION="Non-alcoholic version of this classic" RECIPE="Egg and Nog" RATING=3 OCCASION="Christmas" sh scripts/beverages/update-beverage.sh
+TOKEN="" NAME="Holiday Egg Nog" ID=2 DESCRIPTION="Alcoholic version of this classic" RECIPE="Whiskey,Egg, and Nog" INSTRUCTIONS="do the other thing" RATING=3 OCCASION="Christmas" sh scripts/beverages/update-beverage.sh
 
 # Destroy a beverage
-TOKEN="BAhJIiU5NjcyZjliMWFmMWJjMmMzMGJmNTA4ZmFmM2MzZTEwNAY6BkVG--5d534553f25381bf56e15e1bb4a6cee0043c319a" ID=4 sh scripts/beverages/destroy-beverage.sh
+TOKEN="" ID=4 sh scripts/beverages/destroy-beverage.sh
 
 # Show one beverage - current_user
-TOKEN="BAhJIiU3MmM0NDM0MzMyN2FmZGFjMDdhYTFjNGYzOTQ4ZmJhNgY6BkVG--92503f67c9fd4b5c72fa154a771695439cabdb75" ID=2 sh scripts/beverages/show-beverage.sh
-
-# Show one beverage - any user
-ID=2 sh scripts/beverages/show-beverage.sh
+TOKEN="" ID=2 sh scripts/beverages/show-beverage.sh
 
 # Show all beverages
-TOKEN="BAhJIiVlNmExNTU5NTgxYWJlMjE0Yjc4N2U5ZWIwZTI5ZTVmMwY6BkVG--40ee4a94cf5453af698b89d02cfc74453a87f96d" sh scripts/beverages/show-beverage.sh
-
-# Show all beverages by occasion
-TOKEN="BAhJIiUyNDQ2ZWRjODc1NzE4Zjg2ZDdmOGE5MzlhOTU3ZWIzMQY6BkVG--55f126b7dd447d9b83192b2582af8376d0a75b2e" OCCASION="Christmas" sh scripts/beverages/index-byOccasion-beverages.sh
+TOKEN="" sh scripts/beverages/show-beverage.sh
 
 # Show all beverages for current user
-TOKEN="BAhJIiU1N2E1NDNiOTQzNDhiZGIyNjliOGRjNzEwMDNiZWM5NwY6BkVG--4c4eeaa4712ca98f1f45c59b28bae9997bd32335" sh scripts/beverages/index-user-beverages.sh
+TOKEN="" sh scripts/beverages/index-user-beverages.sh

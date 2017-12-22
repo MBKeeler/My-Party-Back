@@ -6,6 +6,7 @@ curl --include --request POST "http://localhost:4741/beverages" \
      "name": "'"${NAME}"'",
      "description": "'"${DESCRIPTION}"'",
      "recipe": "'"${RECIPE}"'",
+     "instructions": "'"${INSTRUCTIONS}"'",
      "rating": "'"${RATING}"'",
      "occasion": "'"${OCCASION}"'"
    }
