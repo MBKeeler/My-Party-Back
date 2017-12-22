@@ -1,3 +1,3 @@
 class BeverageSerializer < ActiveModel::Serializer
-  attributes :id, :name, :description, :recipe, :rating, :occasion, :user_id
+  attributes :id, :name, :description, :recipe, :rating, :occasion, :instructions
 end

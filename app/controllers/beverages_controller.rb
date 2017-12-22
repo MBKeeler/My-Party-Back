@@ -73,6 +73,6 @@ class BeveragesController < ProtectedController
 
     # Only allow a trusted parameter "white list" through.
     def beverage_params
-      params.require(:beverage).permit(:name, :description, :recipe, :rating, :occasion)
+      params.require(:beverage).permit(:name, :description, :recipe, :rating, :occasion, :instructions)
     end
 end
